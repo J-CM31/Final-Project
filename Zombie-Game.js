@@ -5,7 +5,9 @@ let begin
 let airstrikeFont
 let playButton
 let music
+let hero
 function preload(){
+	hero = loadImage('hero.png')
 	AH = loadImage('AH.jpg')
 	begin = loadImage('begin.jpeg')
 	airstrikeFont = loadFont('title.ttf')
@@ -25,7 +27,7 @@ function setup(){
  music.loop()
  playButton = createButton('PLAY')
    playButton.position(windowWidth/2, windowHeight/2)
-   playButton.mousePressed()//GameBool = true, startScreenBool = false)
+   playButton.mousePressed(startGame)
 }
  
 
@@ -44,7 +46,11 @@ function setup(){
 
 
 function startGame(){
+	GameBool = true
+	startScreenBool = false
+	playButton.hide()
 	image(AH, windowWidth/2, windowHeight/2, windowWidth, windowHeight)
+	image(hero, windowWidth/8, 700, 200, 200)
 
   
 }
