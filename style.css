@@ -1,7 +1,23 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(title.ttf);
+}
+
 html, body {
   margin: 0;
   padding: 0;
 }
 canvas {
   display: block;
+}
+button {
+  font-family: myFirstFont;
+  background-color: #7d1996; /* purple */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
 }
