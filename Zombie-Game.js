@@ -508,6 +508,7 @@ function loseScreen(){
 function restart(){
 	losescreenBool2 = false
 	losescreenBool4 = false
+	winscreenBool = false
 	losescreenBool = false
 	startScreenBool = true
 	restartButton.hide()
